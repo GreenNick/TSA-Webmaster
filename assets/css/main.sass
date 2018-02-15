@@ -6,6 +6,8 @@ header
   position: fixed
   width: 100%
   padding-bottom: 30px
+  background: white
+  border-bottom: #BDBDBD solid 1px
   p
     color: #181818
     font-family: "Fira Sans"
@@ -14,7 +16,7 @@ header
     grid-template-columns: 100px auto
     grid-row-gap: .25rem
     margin: 25px auto
-    max-width: 50%
+    width: 50%
     img
       grid-row-start: 1
       grid-row-end: 3
@@ -25,7 +27,7 @@ header
       color: #065574
       font-family: "Oswald"
   nav
-    max-width: 50%
+    width: 50%
     display: flex
     margin: 0 auto
     justify-content: space-between
@@ -43,3 +45,91 @@ header
     .ext-links
       a
         color: #181818
+
+main
+  background: pink
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  min-height: 800px
+  p
+    font-family: "Fira Sans"
+    line-height: 1.5rem
+    color: #181818
+  .hero
+    padding-top: 180px
+    height: 600px
+    background: violet
+    display: flex
+    flex-direction: column
+    justify-content: center
+    grid-column-start: 1
+    grid-column-end: 4
+    h1
+      color: white
+      font-size: 4rem
+      font-family: "Oswald"
+      text-align: center
+      width: 40%
+      margin: 0 auto
+    a
+      text-decoration: none
+      margin: 50px auto 0
+      font-family: "Fira Sans"
+      color: #181818
+      display: block
+      padding: 12px 18px
+      border-radius: 24px
+      background: white
+      transition: background 200ms ease-in-out
+      &:hover
+        background: rgba(255, 255, 255, 0.7)
+  .stem-section
+    background: white
+    height: 600px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0 150px
+    h2
+      font-size: 2rem
+      font-weight: normal
+      font-family: "Oswald"
+      color: #065574
+      margin-bottom: 20px
+      text-transform: uppercase
+  img
+    height: 100%
+    width: 100%
+  .img-after
+    grid-column-start: 2
+    grid-column-end: 4
+  .img-before
+    grid-column-start: 1
+    grid-column-end: 3
+
+footer
+  height: 175px
+  background: white
+  border-top: #BDBDBD solid 1px
+  .container
+    display: flex
+    width: 50%
+    margin: auto
+    div
+      margin-top: 30px
+      font-family: "Fira Sans"
+      color: #181818
+      line-height: 1.4em
+      margin-right: 150px
+      a
+        color: #181818
+        text-decoration: none
+        transition: color 200ms ease-in-out
+      h3
+        font-family: "Oswald"
+        font-size: 1.25rem
+        font-weight: normal
+        margin-bottom: 10px
+    .contact
+      a:hover
+        color: #065574
