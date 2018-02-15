@@ -1,3 +1,45 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+header {
+  position: fixed;
+  width: 100%;
+  padding-bottom: 30px; }
+  header p {
+    color: #181818;
+    font-family: "Fira Sans"; }
+  header .title {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-row-gap: 0.25rem;
+    margin: 25px auto;
+    max-width: 50%; }
+    header .title img {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      height: 100%; }
+    header .title h1 {
+      font-weight: normal;
+      font-size: 2rem;
+      color: #065574;
+      font-family: "Oswald"; }
+  header nav {
+    max-width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between; }
+    header nav .nav-links a {
+      color: #181818;
+      font-family: "Fira Sans";
+      text-decoration: none;
+      margin-right: 12px;
+      transition: color 200ms ease-in-out; }
+      header nav .nav-links a:hover {
+        color: #065574; }
+    header nav .nav-links .active {
+      border-bottom: #065574 solid 3px; }
+    header nav .ext-links a {
+      color: #181818; }
 
 /*# sourceMappingURL=main.css.map */
