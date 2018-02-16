@@ -66,7 +66,7 @@ main {
     padding: 4px 0; }
   main .hero {
     height: 600px;
-    background: violet;
+    background: url("../img/circuit-board.svg") #065574;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,8 +99,9 @@ main {
     justify-content: center;
     padding: 0 150px; }
   main img {
-    height: 100%;
-    width: 100%; }
+    height: 600px;
+    width: 100%;
+    object-fit: cover; }
   main .img-after {
     grid-column-start: 2;
     grid-column-end: 4; }
@@ -159,13 +160,18 @@ main {
       list-style: none; }
   main .bg-img {
     height: 450px;
-    background: pink;
     background-attachment: fixed;
     grid-column-start: 1;
     grid-column-end: 4;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  main .tsa-bg {
+    background: pink;
+    background-attachment: fixed; }
+  main .ai-bg-1 {
+    background: url("../img/artificial-intelligence.jpg");
+    background-attachment: fixed; }
   main .floating-box {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -175,7 +181,10 @@ main {
     margin: 100px 0; }
     main .floating-box img {
       grid-row-start: 1;
-      grid-row-end: 3; }
+      grid-row-end: 3;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
     main .floating-box h2 {
       color: #181818;
       padding: 40px 40px 0px; }
@@ -186,10 +195,20 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 4; }
+    main .activity-grid .act-1 {
+      background: url("../img/bubbles.svg") #ACE4EC; }
+    main .activity-grid .act-2 {
+      background: url("../img/diagonal-lines.svg") #ACE4EC; }
+    main .activity-grid .act-3 {
+      background: url("../img/overlapping-circles.svg") #ACE4EC; }
+    main .activity-grid .act-4 {
+      background: url("../img/topography.svg") #ACE4EC; }
+    main .activity-grid .act-5 {
+      background: url("../img/rain.svg") #ACE4EC; }
+    main .activity-grid .act-6 {
+      background: url("../img/wiggle.svg") #ACE4EC; }
     main .activity-grid .activity {
       min-height: 600px;
-      border: solid black 1px;
-      background: pink;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -239,8 +258,8 @@ main {
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 80px 0; }
-    main .ai-what .ai-bg {
-      background: pink;
+    main .ai-what .ai-bg-2 {
+      background: url("../img/ai-what.jpg") center left;
       height: 250px;
       margin-bottom: 20px; }
   main .ai-medicine {
@@ -303,7 +322,11 @@ main {
     main .split-view ul {
       padding: 0 200px 40px 230px; }
     main .split-view .micro-bg {
-      background: pink; }
+      background: url("../img/hospital-ward.jpg");
+      background-size: cover; }
+    main .split-view .therapy-bg {
+      background: url("../img/robot.jpg");
+      background-size: cover; }
   main .dark {
     background: #065574; }
     main .dark h2 {
