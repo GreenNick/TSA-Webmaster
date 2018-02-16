@@ -47,16 +47,26 @@ header
         color: #181818
 
 main
-  background: pink
+  background: white
   display: grid
   grid-template-columns: 1fr 1fr 1fr
-  min-height: 800px
+  padding-top: 180px
+  font-family: "Fira Sans"
+  color: #181818
   p
-    font-family: "Fira Sans"
-    line-height: 1.5rem
-    color: #181818
+    line-height: 1.5em
+  h2
+    font-size: 2rem
+    font-weight: normal
+    line-height: 1.2em
+    font-family: "Oswald"
+    color: #065574
+    margin-bottom: 15px
+    text-transform: uppercase
+  li
+    line-height: 1.5em
+    padding: 4px 0
   .hero
-    padding-top: 180px
     height: 600px
     background: violet
     display: flex
@@ -85,18 +95,11 @@ main
         background: rgba(255, 255, 255, 0.7)
   .stem-section
     background: white
-    height: 600px
+    min-height: 600px
     display: flex
     flex-direction: column
     justify-content: center
     padding: 0 150px
-    h2
-      font-size: 2rem
-      font-weight: normal
-      font-family: "Oswald"
-      color: #065574
-      margin-bottom: 20px
-      text-transform: uppercase
   img
     height: 100%
     width: 100%
@@ -106,7 +109,211 @@ main
   .img-before
     grid-column-start: 1
     grid-column-end: 3
-
+  .heading-area
+    background: #065574
+    grid-column-start: 1
+    grid-column-end: 4
+    height: 320px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    a
+      text-decoration: none
+      margin: 25px auto 0
+      font-family: "Fira Sans"
+      color: #181818
+      display: block
+      padding: 12px 18px
+      border-radius: 24px
+      background: white
+      transition: background 200ms ease-in-out
+      &:hover
+        background: rgba(255, 255, 255, 0.7)
+    h1
+      color: white
+      width: 40%
+      text-align: center
+      margin: 0 auto 10px
+      font-family: "Oswald"
+      font-size: 3rem
+      font-weight: normal
+      text-transform: uppercase
+    p
+      color: white
+      width: 40%
+      text-align: center
+      margin: 0 auto
+    q
+      color: white
+      width: 40%
+      text-align: center
+      margin: 0 auto 20px
+      font-size: 1.5rem
+  .light
+    background: #ACE4EC
+    h1
+      color: #181818
+    li
+      color: #181818
+      width: 40%
+      text-align: center
+      margin: 0 auto
+      list-style: none
+  .bg-img
+    height: 450px
+    background: pink
+    background-attachment: fixed
+    grid-column-start: 1
+    grid-column-end: 4
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .floating-box
+    grid-column-start: 2
+    grid-column-end: 3
+    display: grid
+    grid-template-columns: 1fr 1fr
+    background: #E57A62
+    margin: 100px 0
+    img
+      grid-row-start: 1
+      grid-row-end: 3
+    h2
+      color: #181818
+      padding: 40px 40px 0px
+    p
+      padding: 0px 40px 40px
+  .activity-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-start: 1
+    grid-column-end: 4
+    .activity
+      min-height: 600px
+      border: solid black 1px
+      background: pink
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .floating-box-activity
+        background: white
+        min-height: 500px
+        width: 400px
+        margin: auto
+        h2
+          color: #181818
+          padding: 60px 60px 0
+        ul
+          padding: 0 60px
+          .circle
+            list-style-type: circle
+        p
+          padding: 0 60px
+  .ai-floating-box
+    background: white
+    margin: auto
+    width: 40%
+    h1
+      color: #181818
+      font-size: 4rem
+      font-family: "Oswald"
+      line-height: 1.2em
+      text-align: center
+      width: 40%
+      margin: 0 auto
+      padding: 40px 0
+    h2
+      color: #181818
+      width: 40%
+      text-align: center
+      margin: 0 auto 10px
+      font-family: "Oswald"
+      font-size: 3rem
+      font-weight: normal
+      text-transform: uppercase
+      padding-top: 40px
+    ul
+      padding: 0 80px 40px
+    p
+      padding: 0 80px 20px
+  .ai-what
+    background: #ACE4EC
+    grid-column-start: 1
+    grid-column-end: 4
+    padding: 80px 0
+    .ai-bg
+      background: pink
+      height: 250px
+      margin-bottom: 20px
+  .ai-medicine
+    grid-column-start: 1
+    grid-column-end: 4
+    padding: 80px 0
+    display: flex
+    flex-direction: column
+    a
+      text-decoration: none
+      margin: 25px auto 0
+      font-family: "Fira Sans"
+      color: white
+      display: block
+      padding: 12px 18px
+      border-radius: 24px
+      background: #065574
+      transition: background 200ms ease-in-out
+      &:hover
+        background: rgba(6, 85, 116, 0.7)
+    h2
+      width: 40%
+      text-align: center
+      margin: 0 auto 10px
+      font-family: "Oswald"
+      font-size: 3rem
+      font-weight: normal
+      text-transform: uppercase
+      padding-bottom: 40px
+    .ai-floating-box
+      background: #E57A62
+      padding: 40px 0
+      margin-bottom: 30px
+      h3
+        font-size: 2rem
+        text-align: center
+        margin: 0 auto 10px
+        font-weight: normal
+        font-family: "Oswald"
+        color: #181818
+        text-transform: uppercase
+      p
+        text-align: center
+  .split-view
+    grid-column-start: 1
+    grid-column-end: 4
+    display: grid
+    grid-template-columns: 1fr 1fr
+    .info
+      padding: 100px 0
+    h2
+      font-size: 4rem
+      font-family: "Oswald"
+      line-height: 1.2em
+      margin-bottom: 10px
+      padding: 40px 200px 0
+    p
+      padding: 0 200px 20px
+      font-size: 1.5rem
+    ul
+      padding: 0 200px 40px 230px
+    .micro-bg
+      background: pink
+  .dark
+    background: #065574
+    h2
+      color: white
+    p
+      color: white
+    ul
+      color: white
 footer
   height: 175px
   background: white

@@ -45,16 +45,26 @@ header {
       color: #181818; }
 
 main {
-  background: pink;
+  background: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 800px; }
+  padding-top: 180px;
+  font-family: "Fira Sans";
+  color: #181818; }
   main p {
-    font-family: "Fira Sans";
-    line-height: 1.5rem;
-    color: #181818; }
+    line-height: 1.5em; }
+  main h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2em;
+    font-family: "Oswald";
+    color: #065574;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  main li {
+    line-height: 1.5em;
+    padding: 4px 0; }
   main .hero {
-    padding-top: 180px;
     height: 600px;
     background: violet;
     display: flex;
@@ -83,18 +93,11 @@ main {
         background: rgba(255, 255, 255, 0.7); }
   main .stem-section {
     background: white;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 150px; }
-    main .stem-section h2 {
-      font-size: 2rem;
-      font-weight: normal;
-      font-family: "Oswald";
-      color: #065574;
-      margin-bottom: 20px;
-      text-transform: uppercase; }
   main img {
     height: 100%;
     width: 100%; }
@@ -104,6 +107,211 @@ main {
   main .img-before {
     grid-column-start: 1;
     grid-column-end: 3; }
+  main .heading-area {
+    background: #065574;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .heading-area a {
+      text-decoration: none;
+      margin: 25px auto 0;
+      font-family: "Fira Sans";
+      color: #181818;
+      display: block;
+      padding: 12px 18px;
+      border-radius: 24px;
+      background: white;
+      transition: background 200ms ease-in-out; }
+      main .heading-area a:hover {
+        background: rgba(255, 255, 255, 0.7); }
+    main .heading-area h1 {
+      color: white;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto 10px;
+      font-family: "Oswald";
+      font-size: 3rem;
+      font-weight: normal;
+      text-transform: uppercase; }
+    main .heading-area p {
+      color: white;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto; }
+    main .heading-area q {
+      color: white;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto 20px;
+      font-size: 1.5rem; }
+  main .light {
+    background: #ACE4EC; }
+    main .light h1 {
+      color: #181818; }
+    main .light li {
+      color: #181818;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+      list-style: none; }
+  main .bg-img {
+    height: 450px;
+    background: pink;
+    background-attachment: fixed;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  main .floating-box {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #E57A62;
+    margin: 100px 0; }
+    main .floating-box img {
+      grid-row-start: 1;
+      grid-row-end: 3; }
+    main .floating-box h2 {
+      color: #181818;
+      padding: 40px 40px 0px; }
+    main .floating-box p {
+      padding: 0px 40px 40px; }
+  main .activity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+    main .activity-grid .activity {
+      min-height: 600px;
+      border: solid black 1px;
+      background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      main .activity-grid .activity .floating-box-activity {
+        background: white;
+        min-height: 500px;
+        width: 400px;
+        margin: auto; }
+        main .activity-grid .activity .floating-box-activity h2 {
+          color: #181818;
+          padding: 60px 60px 0; }
+        main .activity-grid .activity .floating-box-activity ul {
+          padding: 0 60px; }
+          main .activity-grid .activity .floating-box-activity ul .circle {
+            list-style-type: circle; }
+        main .activity-grid .activity .floating-box-activity p {
+          padding: 0 60px; }
+  main .ai-floating-box {
+    background: white;
+    margin: auto;
+    width: 40%; }
+    main .ai-floating-box h1 {
+      color: #181818;
+      font-size: 4rem;
+      font-family: "Oswald";
+      line-height: 1.2em;
+      text-align: center;
+      width: 40%;
+      margin: 0 auto;
+      padding: 40px 0; }
+    main .ai-floating-box h2 {
+      color: #181818;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto 10px;
+      font-family: "Oswald";
+      font-size: 3rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding-top: 40px; }
+    main .ai-floating-box ul {
+      padding: 0 80px 40px; }
+    main .ai-floating-box p {
+      padding: 0 80px 20px; }
+  main .ai-what {
+    background: #ACE4EC;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 80px 0; }
+    main .ai-what .ai-bg {
+      background: pink;
+      height: 250px;
+      margin-bottom: 20px; }
+  main .ai-medicine {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column; }
+    main .ai-medicine a {
+      text-decoration: none;
+      margin: 25px auto 0;
+      font-family: "Fira Sans";
+      color: white;
+      display: block;
+      padding: 12px 18px;
+      border-radius: 24px;
+      background: #065574;
+      transition: background 200ms ease-in-out; }
+      main .ai-medicine a:hover {
+        background: rgba(6, 85, 116, 0.7); }
+    main .ai-medicine h2 {
+      width: 40%;
+      text-align: center;
+      margin: 0 auto 10px;
+      font-family: "Oswald";
+      font-size: 3rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding-bottom: 40px; }
+    main .ai-medicine .ai-floating-box {
+      background: #E57A62;
+      padding: 40px 0;
+      margin-bottom: 30px; }
+      main .ai-medicine .ai-floating-box h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto 10px;
+        font-weight: normal;
+        font-family: "Oswald";
+        color: #181818;
+        text-transform: uppercase; }
+      main .ai-medicine .ai-floating-box p {
+        text-align: center; }
+  main .split-view {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    main .split-view .info {
+      padding: 100px 0; }
+    main .split-view h2 {
+      font-size: 4rem;
+      font-family: "Oswald";
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      padding: 40px 200px 0; }
+    main .split-view p {
+      padding: 0 200px 20px;
+      font-size: 1.5rem; }
+    main .split-view ul {
+      padding: 0 200px 40px 230px; }
+    main .split-view .micro-bg {
+      background: pink; }
+  main .dark {
+    background: #065574; }
+    main .dark h2 {
+      color: white; }
+    main .dark p {
+      color: white; }
+    main .dark ul {
+      color: white; }
 
 footer {
   height: 175px;
